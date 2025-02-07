@@ -15,7 +15,7 @@ def most_frequent(list):
         current_frequency = list.count(element)
         compared_frequency = current_frequency
         if compared_frequency == frequency and element != number:
-            return False;
+            return False
         # si la fréquence trouvée est plus grande que counter, la fréquence devient la référence
         if current_frequency > frequency:
             frequency = current_frequency
