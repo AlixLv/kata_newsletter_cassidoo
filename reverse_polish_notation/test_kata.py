@@ -1,7 +1,7 @@
 import unittest 
 from kata import evaluate_postfix
 
-class TestEvaluatePostfix((unittest.TestCase)):
+class TestEvaluatePostfix(unittest.TestCase):
     def setUp(self):
         self.test_data = "423+*"
         self.empty_data = ""
