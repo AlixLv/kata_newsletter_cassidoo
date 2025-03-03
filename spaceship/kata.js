@@ -34,7 +34,7 @@ function findShieldBreak(arr, capacity){
             continue;
         }   
     }  
-    // si amountAttack n'a jamais dépassé capacity:
+    // si amountAttack n'a jamais dépassé capacity: 
     return res=  - 1; 
 }
 

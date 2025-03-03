@@ -13,3 +13,4 @@ function findShieldBreak(arr, shield){
 
 let res = findShieldBreak([50], 30); 
 console.log(res)
+
