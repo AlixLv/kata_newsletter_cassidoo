@@ -1,4 +1,6 @@
-// Given an array of attack damages and a shield capacity for a spaceship, return the index when cumulative damage exceeds the shield. Return -1 if shield survives.
+// Given an array of attack damages and a shield capacity for a spaceship, 
+// return the index when cumulative damage exceeds the shield. Return -1 if shield survives.
+
 // > findShieldBreak([10, 20, 30, 40], 50)
 // > 2
 
@@ -46,5 +48,5 @@ function findShieldBreak(arr, capacity){
 
 }
 
-let result = findShieldBreak([1, 2, 3, 4], 20)
+let result = findShieldBreak([10, 20, 30, 40], 50)
 console.log("🍭 ", result)
