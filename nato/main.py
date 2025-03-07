@@ -16,10 +16,10 @@ def natoify(chain):
             translation.append("(space)") 
         elif char in numbers:
             translation.append(numbers[char])  
-             
-        for key, value in nato.items():
-            if char == key:
-                translation.append(value)                  
+        else:     
+            for key, value in nato.items():
+                if char == key:
+                    translation.append(value)                  
       
     str_translation = " ".join(translation)
     
@@ -70,7 +70,7 @@ numbers = {
 
 
 def main():
-    result = natoify('3spooky5me')
+    result = natoify('3spooky5me4')
     print(result)
 
 main()
