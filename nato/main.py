@@ -8,6 +8,11 @@
 # > natoify('3spooky5me')
 # > "Three Sierra Papa Oscar Oscar Kilo Yankee Five Mike Echo"
 
+def main():
+    result = natoify('3spooky5me4')
+    print(result)
+    
+
 def natoify(chain):
     translation = []
     
@@ -68,9 +73,5 @@ numbers = {
     "9": "Nine",
 }
 
-
-def main():
-    result = natoify('3spooky5me4')
-    print(result)
 
 main()
