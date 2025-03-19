@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+import datetime
 
 
 def get_day_obj(str_date):
@@ -19,13 +20,19 @@ def get_nb_weeks(closing_date, visit_date):
     # timedelta.days retourne le nombre total de jours dans la durée
     # // 7 division entière qui retourne le nombre de semaine 
     result = (closing_date_obj - visit_date_obj).days//7
+    print("🍊 result: ", result)
     return result
 
 
 def calculate_price(closing_date, visit_date, original_price):
+    close = datetime.datetime.strptime(closing_date, '%Y-%m-%d')
+    visit = datetime.datetime.strptime(visit_date, '%Y-%m-%d')
     discount_price = original_price
     discount = 10
-    weeks_nbr = get_nb_weeks(closing_date, visit_date) 
+    #weeks_nbr = get_nb_weeks(closing_date, visit_date) 
+    
+    weeks_nbr = (close - visit).days//7
+    print("🍉 number of weeks: ", weeks_nbr)
     
     while weeks_nbr > 0:
         discount_to_apply = (discount_price * discount) / 100
