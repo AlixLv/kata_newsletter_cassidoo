@@ -14,3 +14,6 @@ class TestMainElement(unittest.TestCase):
     def test_no_majority(self):
         self.assertTrue(majority([1,2,3,4]), "No majority")
 
+
+if __name__ == '__main__':
+    unittest.main()          
