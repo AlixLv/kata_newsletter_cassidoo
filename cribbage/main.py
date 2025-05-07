@@ -56,6 +56,8 @@ def get_sum_score(cards_list):
     #get all the possible combinations in the list (2, 3, 4, and 5 cards combinations)
     #calculate sum for each combinations
     # score+= 2 if sum == 15x
+    
+    
          
     return score
 

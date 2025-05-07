@@ -1,0 +1,24 @@
+on vérifie si la liste est vide; si oui, on renvoie une string vide
+
+on enregistre dans une variable le mot le plus court de la liste.
+il sert de limite de référence pour la comparaison
+
+1re boucle for:
+on itère dans un range/une gamme de la longueur du mot le plus court:
+    1er tour:
+        on enregistre dans une variable la 1re lettre (index) du 1er mot de la liste
+
+        2e boucle for:
+        on itère sur chaque mot de la liste:
+            1er tour:
+            dès que la lettre du mot est différente de celle enregistrée dans la variable,
+            on retourne le 1er mot de la liste, sur une longueur équivalente à l'index en court
+
+    2e tour:
+    on enregistre dans la variable la 2e lettre (index) du 1er mot de la liste
+
+        2e tour:
+        on reproduit le même processus
+
+si tous les mots sont identiques dans la longueur de référence, alors
+on retourne le 1er mot de la liste, sur une longueur équivalente à celle de la longueur de référence

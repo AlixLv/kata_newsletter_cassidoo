@@ -1,0 +1,6 @@
+.pytest_cache
+__pycache__/
+.txt
+reverse_polish_notation/vanessa_solution.js
+alison_newYearsDay.py
+answer.js

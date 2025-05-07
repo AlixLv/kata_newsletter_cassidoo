@@ -1,0 +1,24 @@
+["flower","flow","flight"]
+
+min_length = 4 pour "flow"
+low, high = 1, 4
+
+tant que 1 (low) est plus petit ou égal à 4 (high):
+    mid = (1 + 4) // 2 = 2
+
+    on appelle la fonction auxiliaire:
+        str0, count = 1re lettre du 1er mot de la liste jusqu'à mid, longueur de la liste
+        str0, count = "fl", 3
+
+        on itère de 1 à 3 (count) pour vérifier si le début de chaque mot jusqu'à la longueur 2
+        est égal à "fl" (str0) --> retourne True ou False
+
+    si True:
+        low = 2(mid) + 1 = 3
+        pour chercher un préfixe plus long
+
+    si False:
+        high = 2(mid) -1
+        pour chercher un préfixe plus court
+
+on retourne de la 1re lettre du 1er mot de la liste jusqu'à low + high // 2

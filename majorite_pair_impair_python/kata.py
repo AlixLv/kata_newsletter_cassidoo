@@ -46,15 +46,16 @@ def majority(list):
     result_of_majority = even_or_odd(array_of_int)
     print("most frequent number: ", most_frequent_number)
     print("result of majority: ", result_of_majority)
+    
     if most_frequent_number == False and result_of_majority == "No majority":
-        print("IN IF")
         return result_of_majority
     elif most_frequent_number == False and result_of_majority != "No majority":
-        print("IN ELIF")
         return result_of_majority
     else:    
         print("most frequent number: ", most_frequent_number)
         return most_frequent_number
 
-main()
+
+if  __name__ == "__main__":
+    main()
 

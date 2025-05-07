@@ -39,7 +39,6 @@ function findShieldBreak(arr, capacity){
         }
         else{
             i++;
-            // retourne à l'exécution de la boucle while
             continue; 
         }
     }  
