@@ -33,3 +33,7 @@ class TestOddSum(unittest.TestCase):
     def test_type_return(self):
         message = "Return value is of type list"
         self.assertIsInstance(odd_sum([9, 14, 6, 2, 11], [8, 4, 7, 20]), list, message)
+
+
+if __name__ == "__main__":
+    unittest.main()           
