@@ -3,12 +3,25 @@
 # The only valid transitions are: red to green, green to yellow, and yellow to red.
 
 
-def is_valid_traffic_sequence(my_list:list[str])->bool:  
+def is_valid_traffic_sequence(input_list:list[str])->bool:  
     valid_transitions = {
     "red":"green",
     "green":"yellow",
     "yellow":"red"
     }  
+    
+    if len(input_list) <= 1:
+        return False
+    elif not isinstance(input_list, list):
+        raise TypeError("You must enter a list")
+    
+
+    my_list = []
+    for word in input_list:
+        if not isinstance(word, str):
+            raise TypeError("You must enter a list of string")
+        my_list.append(word.lower())
+
     
     for i in range(len(my_list)-1):
         if valid_transitions[my_list[i]] != my_list[i+1]:
@@ -17,6 +30,16 @@ def is_valid_traffic_sequence(my_list:list[str])->bool:
 
 
 if __name__ == "__main__":
-    #result = is_valid_traffic_sequence(["red", "yellow", "green"])
-    result = is_valid_traffic_sequence(["red", "green", "yellow", "red", "green", "yellow"])
-    print(f"🩷 {result}")
+    my_tests = [
+        ["red", "yellow", "green"],
+        ["red", "green", "yellow", "red", "green", "yellow"], 
+        [],
+        ["Green"],
+        ["Red", "Green", "Yellow"]
+    ]
+
+    for test in my_tests:
+        result = is_valid_traffic_sequence(test)
+        print(f"🎯 {result}")
+    
+    
