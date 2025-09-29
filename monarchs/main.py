@@ -24,7 +24,7 @@ def sort_monarchs(monarchs:list[str])->list[str]:
 
 if __name__ == "__main__":
     tests = [
-        ["George VI", "Elizabeth I", "George V", "Elizabeth II", "George IV", "Edward VIII"], 
+        ["George VI", "George X", "Elizabeth I", "George V", "Elizabeth II", "George IV", "Edward VIII"], 
         ["Louis IX", "Louis VIII", "Philip II", "Philip I"],
         [],
         ["Louis IX"],

@@ -4,6 +4,7 @@ def nestArray(arr:list)->list[list]:
     """
     
     matrix = [arr[len(arr)-1]]
+    print(matrix)
 
     for i in range(len(arr)-2, -1, -1):
         matrix = [arr[i], matrix]

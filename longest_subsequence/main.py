@@ -47,14 +47,14 @@ def longest_subsequence(list):
                     subsequence.append(list[i])
                 subsequence.append(list[i + 1])
                 print("🍋 ", subsequence)
+                print("i: ", i)
             else:
                 list_subsequences.append(subsequence)
                 print("🥬 ", list_subsequences)   
                 subsequence = []
     
-    
         len_list_subsequences = len(list_subsequences)
-        print("🐸 ", len_list_subsequences)
+        print(f"🐸 len: {len_list_subsequences}, list: {list_subsequences}")
         
         if len_list_subsequences == 0:
             print("🦁 ", len(subsequence))
@@ -69,10 +69,10 @@ def longest_subsequence(list):
 
 
 def main():
-    #length_subsequence =  longest_subsequence([10,11,7,8,9,12])
-    #print(length_subsequence)
-    res = get_longest_sub([])
-    print("🐼 ", res)
+    length_subsequence =  longest_subsequence([10,11,7,8,9,12,1,2,3,4])
+    print(length_subsequence)
+    # res = get_longest_sub([])
+    # print("🐼 ", res)
 
 
 main()    
