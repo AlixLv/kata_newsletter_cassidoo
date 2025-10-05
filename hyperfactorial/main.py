@@ -8,9 +8,7 @@ def hyperfactorial(n):
     elif not isinstance(n, int):
         raise TypeError (f'{n} is not an integer. Please enter a integer value.')
     
-    if n == 0: 
-        return 0
-    elif n == 1:
+    if n == 0 or n == 1:
         return 1
 
     result = 1
@@ -22,5 +20,5 @@ def hyperfactorial(n):
 
 
 if __name__ == "__main__":
-    res = hyperfactorial(5)
+    res = hyperfactorial(4)
     print(f'res: {res}')
